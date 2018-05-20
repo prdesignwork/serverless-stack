@@ -12,7 +12,7 @@ Traditionally, we’ve built and deployed web applications where we have some de
 4.  As our usage scales we need to manage scaling up our server as well. And as a result manage scaling it down when we don’t have as much usage.
 
 For smaller companies and individual developers this can be a lot to handle. This ends up distracting from the more important job that we have; building and maintaining the actual application. At larger organisations this is handled by the infrastructure team and usually it is not the responsibility of the individual developer. However, the processes necessary to support this can end up slowing down development times. As you cannot just go ahead and build your application without working with the infrastructure team to help you get up and running.
-
+5
 As developers we’ve been looking for a solution to these problems and this is where serverless comes in. Serverless allows us to build applications where we simply hand the cloud provider (AWS, Azure, or Google Cloud) our code and it runs it for us. It also allocates the appropriate amount of resources to respond to the usage. On our end we only get charged for the time it took our code to execute and the resources it consumed. If we are undergoing a spike of usage, the cloud provider simply creates more instances of our code to respond to the requests. Additionally, our code runs in a secured environment where the cloud provider takes care of keeping the server up to date and secure.
 
 #### AWS Lambada
@@ -107,6 +107,16 @@ We can provide a more fine-grained policy here and we cover this later in the [C
 Select **Create user**
 
 ![Create User](https://d33wubrfki0l68.cloudfront.net/a98dcdcef6a52e1978d5b37e2dd1d13a39df7fe0/8f886/assets/iam-user/review-iam-user.png)
+
+Select **Show** to reveal **Secret access key**.
+
+![Secret Access](https://d33wubrfki0l68.cloudfront.net/59cfa9104b91b7f5c0a7a8c629111174f79b18f8/dc7de/assets/iam-user/added-iam-user.png)
+
+Take a note of the **Access key ID** and **Secret access key**. We will be needing this later.
+
+![Secret accesss](https://d33wubrfki0l68.cloudfront.net/3a61e6ab057cc3c4c94dcfb7cd9c6d6e6e953a1e/9d8dd/assets/iam-user/iam-user-credentials.png)
+
+The concept of IAM pops up very frequently when working with AWS services. So it is worth taking a better look at what IAM is and how it can help us secure our serverless setup.
 
 #### What is IAM
 
